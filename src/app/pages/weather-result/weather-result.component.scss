@@ -1,0 +1,26 @@
+$backcolor: #2196f3;
+$colour: #ffffff;
+
+.divider {
+    width: 100%;
+    border: 1px solid $backcolor;
+    margin: 10px 0px;
+}
+
+.weather-icon {
+    background-color: $backcolor;
+}
+
+.weather-celcius {
+    background-color: $backcolor;
+    color: $colour;
+    padding: 0px 20px 0px 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.weather-data {
+    background-color: $backcolor;
+    color: $colour;
+    padding-right: 20px;
+}

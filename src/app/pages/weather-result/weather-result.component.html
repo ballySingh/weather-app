@@ -1,0 +1,19 @@
+<div *ngIf="weather$ | async as weather">
+  <div class="divider"></div>
+  <div class="row">
+    <div class="col">
+      <div class="d-flex flex-row justify-content-center">
+      <div class="weather-icon">
+        <img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png"/>
+      </div>
+      <div class="d-flex flex-column justify-content-center weather-celcius">
+          <div>{{ weather.main.temp }} &#8451;</div>
+        </div>
+      <div class="d-flex flex-column justify-content-center weather-data">
+        <div>{{ weather.name }}, {{weather.sys.country}}</div>
+        <div>{{ weather.weather[0].description }}</div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

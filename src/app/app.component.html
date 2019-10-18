@@ -1,0 +1,11 @@
+<section id="wrapper">
+  <section id="header-wrapper" >
+    <div class="row header-title">
+        {{headerTitle}} <img src="http://openweathermap.org/img/wn/{{ iconImg$ | async }}@2x.png"/>
+    </div>
+  </section>
+
+  <section id="body-wrapper">
+    <router-outlet></router-outlet>
+  </section>
+</section>
